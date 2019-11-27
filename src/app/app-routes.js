@@ -1,19 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import { AppPageNotFound } from './shared/components';
-
 Vue.use(Router);
 
 const appRoutes = [
   {
     path: '/',
     redirect: '/dashboard'
-  },
-  {
-    path: '*',
-    name: 'page-not-found',
-    component: AppPageNotFound
   }
 ];
 
