@@ -2,7 +2,7 @@ import Vue from 'vue';
 
 import './plugins';
 
-import App from './app/app.vue';
+import App from './app/app.vue'
 
 //bootstrap
 import BootstrapVue from 'bootstrap-vue'
@@ -24,7 +24,7 @@ import { InputsInstaller } from '@progress/kendo-inputs-vue-wrapper'
 Vue.use(InputsInstaller)
 
 //styles & layout
-localStorage.getItem('selectedLang') == 'en' ? import('./main.scss') : import('./main-rtl.scss');
+localStorage.getItem('selectedLang') == 'en' ? import('./main.scss') : import('./main-rtl.scss')
 import Default from './app/shared/layouts/default.vue'
 Vue.component('default-layout', Default)
 
@@ -39,19 +39,16 @@ import i18n from './i18n'
 import vueShortKey from 'vue-shortkey'
 Vue.use(vueShortKey)
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
-
+  i18n,
   components: {
     Grid,
     DataSource,
     Tooltip,
-    // Switch
   },
-
-  i18n,
   render: h => h(App)
 }).$mount('#app');

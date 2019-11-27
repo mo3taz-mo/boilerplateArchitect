@@ -1,8 +1,8 @@
 {
-  "name": "vuejs_boilerplate",
+  "name": "ahbs_backoffice",
   "version": "0.1.0",
   "private": true,
-  "author": "Arun Redhu",
+  "author": "AHBS Dev. Team",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
