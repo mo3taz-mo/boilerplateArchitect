@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import { usersRoutes } from './users';
-
 import { AppPageNotFound } from './shared/components';
 
 Vue.use(Router);
@@ -10,7 +8,7 @@ Vue.use(Router);
 const appRoutes = [
   {
     path: '/',
-    redirect: '/users'
+    redirect: '/dashboard'
   },
   {
     path: '*',
@@ -19,7 +17,7 @@ const appRoutes = [
   }
 ];
 
-const routes = [...usersRoutes, ...appRoutes];
+const routes = [...appRoutes];
 
 export default new Router({
   mode: 'history',
